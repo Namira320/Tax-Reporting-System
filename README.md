@@ -32,7 +32,7 @@ A smart desktop application designed to simplify the process for both individual
 
 * 💻 **Programming Language:** Visual Basic .NET (VB.NET)
 * 🖥️ **Presentation Layer:** Windows Forms (WinForms)
-* 🗄️ **Database Management System:** Microsoft SQL Server 2022 Express / SQL Server Management Studio (SSMS)
+* 🗄️ **Database Management System:** Microsoft SQL Server 
 * 📑 **Reporting Engine:** Crystal Reports / RDLC for automated PDF generation (Form 1721-A1)
 * 📂 **Data Integration:** Spreadsheet reader for secure CSV/Excel bulk data ingestion
 
