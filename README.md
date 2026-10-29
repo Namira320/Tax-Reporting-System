@@ -1,4 +1,4 @@
-# 🚀 TaxEase — Individual & Corporate Annual Income Tax (SPT) Reporting Integration System
+# 💵 TaxEase — Individual & Corporate Annual Income Tax (SPT) Reporting Integration System
 
 A smart desktop application designed to simplify the process for both individual taxpayers (employees) and corporate entities (employers) in managing tax withholding slips, simulating tax calculations, and preparing annual SPT reporting ahead of the Directorate General of Taxes (DJP) Coretax system transition in Indonesia.
 
