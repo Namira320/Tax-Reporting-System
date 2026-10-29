@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="Admin\Dashboard_AD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Admin\ManajemenPengguna.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Admin\Pengaturan_AD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Dashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Pemberi Kerja\CetakBuktiPotong.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Pemberi Kerja\Dashboard_PK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Pemberi Kerja\ImportGaji.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Pengisian SPT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Profil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="project_pajak\Admin\Dashboard_AD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="project_pajak\Admin\ManajemenPengguna.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="project_pajak\Admin\Pengaturan_AD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="project_pajak\Dashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="project_pajak\Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="project_pajak\Notifikasi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="project_pajak\Pemberi Kerja\CetakBuktiPotong.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="project_pajak\Pemberi Kerja\Dashboard_PK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="project_pajak\Pemberi Kerja\ImportGaji.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="project_pajak\Pengisian SPT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="project_pajak\Profil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="project_pajak\Register.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="project_pajak\ResetPassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="project_pajak\RiwayatPelaporan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="project_pajak\Simulasi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Register.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ResetPassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="RiwayatPelaporan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Simulasi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Notifikasi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
