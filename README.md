@@ -12,6 +12,14 @@ A smart desktop application designed to simplify the process for both individual
 
 ---
 
+## 📄 Project Documentation
+
+- [Software-Requirements-Specification](./Software-Requirements-Specification.pdf)
+- [System-Design-Description](./System-Design-Description.pdf)
+- [UI-UX-Specification-Document](./UI-UX-Specification-Document.pdf)
+
+---
+
 ## ✨ Key Features & Capabilities
 
 * 👤 **Individual Taxpayer Modules:**
