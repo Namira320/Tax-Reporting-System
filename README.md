@@ -14,11 +14,11 @@ A smart desktop application designed to simplify the process for both individual
 
 ## 📄 Project Documentation
 
-- [Software-Requirements-Specification](./Software-Requirements-Specification.pdf)
+- [Software-Requirements-Specification](docs/Software-Requirements-Specification.pdf)
   
-- [System-Design-Description](./System-Design-Description.pdf)
+- [System-Design-Description](docs/System-Design-Description.pdf)
   
-- [UI-UX-Specification-Document](./UI-UX-Specification-Document.pdf)
+- [UI-UX-Specification-Document](docs/UI-UX-Specification-Document.pdf)
 
 ---
 
