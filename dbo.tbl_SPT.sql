@@ -1,0 +1,22 @@
+CREATE TABLE [dbo].[tbl_SPT] (
+    [ID]               INT             IDENTITY (1, 1) NOT NULL,
+    [NIK]              VARCHAR (16)    NOT NULL,
+    [Nama]             NVARCHAR (100)  NULL,
+    [TahunPajak]       INT             NOT NULL,
+    [MasaPajak]        INT             DEFAULT ((1)) NOT NULL,
+    [JenisSPT]         NVARCHAR (50)   NULL,
+    [StatusSPT]        NVARCHAR (50)   NULL,
+    [StatusPembetulan] INT             DEFAULT ((0)) NULL,
+    [PenghasilanBruto] DECIMAL (18, 2) DEFAULT ((0)) NULL,
+    [PenghasilanNetto] DECIMAL (18, 2) NULL,
+    [PPhDipotong]      DECIMAL (18, 2) DEFAULT ((0)) NULL,
+    [PPhTerutang]      DECIMAL (18, 2) NULL,
+    [PPhKurangLebih]   DECIMAL (18, 2) DEFAULT ((0)) NULL,
+    [KreditPajak]      DECIMAL (18, 2) NULL,
+    [StatusBayar]      NVARCHAR (20)   NULL,
+    [TanggalLapor]     DATE            NULL,
+    [TanggalInput]     DATETIME        DEFAULT (getdate()) NULL,
+    [TanggalUpdate]    DATETIME        DEFAULT (getdate()) NULL,
+    PRIMARY KEY CLUSTERED ([ID] ASC),
+    FOREIGN KEY ([NIK]) REFERENCES [dbo].[tbl_WajibPajak] ([NIK])
+);

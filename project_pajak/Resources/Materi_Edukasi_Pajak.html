@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi Edukasi Pajak - TaxEase</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 2cm;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2980b9 0%, #6dd5fa 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        h2 {
+            color: #2980b9;
+            border-bottom: 3px solid #2980b9;
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+
+        h3 {
+            color: #2980b9;
+            margin-top: 20px;
+        }
+
+        .box {
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 10px;
+        }
+
+        .box-success {
+            background: #d4edda;
+            border: 2px solid #28a745;
+        }
+
+        .box-warning {
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+        }
+
+        .box-info {
+            background: #d1ecf1;
+            border: 2px solid #17a2b8;
+        }
+
+        .box-danger {
+            background: #f8d7da;
+            border: 2px solid #dc3545;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin: 5px;
+        }
+
+        .status-nihil {
+            background: #28a745;
+            color: white;
+        }
+
+        .status-kurang {
+            background: #dc3545;
+            color: white;
+        }
+
+        .status-lebih {
+            background: #ffc107;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #2980b9;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .step {
+            background: #f5f5f5;
+            padding: 20px;
+            margin: 15px 0;
+            border-left: 5px solid #2980b9;
+            border-radius: 5px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 2px solid #ddd;
+            color: #777;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        .emoji {
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>📚 Materi Edukasi Pajak</h1>
+        <p>Panduan Lengkap Perpajakan & Penggunaan TaxEase</p>
+        <p><strong>Pahami Status Pajak & Kewajiban Anda</strong></p>
+    </div>
+
+    <h2>📖 Daftar Isi</h2>
+    <ol>
+        <li><a href="#status-pajak">Memahami Status Pajak</a></li>
+        <li><a href="#kepatuhan">Kepatuhan Pajak</a></li>
+        <li><a href="#cara-pakai">Cara Menggunakan TaxEase</a></li>
+        <li><a href="#tips">Tips & Best Practices</a></li>
+    </ol>
+
+    <h2 id="status-pajak">🎯 Memahami Status Pajak</h2>
+    <p>Setelah menghitung pajak, Anda akan mendapatkan salah satu dari 3 status berikut:</p>
+
+    <h3>1. <span class="status-badge status-nihil">✅ NIHIL</span></h3>
+    <div class="box box-success">
+        <h4>Apa itu Status Nihil?</h4>
+        <p>Status <strong>Nihil</strong> berarti pajak yang terutang <strong>sama dengan</strong> pajak yang sudah
+            dipotong oleh pemberi kerja.</p>
+
+        <h4>Contoh Perhitungan:</h4>
+        <table>
+            <tr>
+                <th>Keterangan</th>
+                <th>Jumlah</th>
+            </tr>
+            <tr>
+                <td>Penghasilan Bruto per Tahun</td>
+                <td>Rp 60.000.000</td>
+            </tr>
+            <tr>
+                <td>Penghasilan Neto (setelah biaya jabatan)</td>
+                <td>Rp 57.000.000</td>
+            </tr>
+            <tr>
+                <td>PTKP (K/0)</td>
+                <td>Rp 54.000.000</td>
+            </tr>
+            <tr>
+                <td>Penghasilan Kena Pajak (PKP)</td>
+                <td>Rp 3.000.000</td>
+            </tr>
+            <tr>
+                <td><strong>PPh 21 Terutang (5%)</strong></td>
+                <td><strong>Rp 150.000</strong></td>
+            </tr>
+            <tr>
+                <td>PPh 21 Sudah Dipotong</td>
+                <td>Rp 150.000</td>
+            </tr>
+            <tr style="background: #d4edda;">
+                <td><strong>SELISIH</strong></td>
+                <td><strong>Rp 0 (NIHIL)</strong></td>
+            </tr>
+        </table>
+
+        <h4>Yang Harus Dilakukan:</h4>
+        <ul>
+            <li>✅ Tetap wajib <strong>melaporkan SPT Tahunan</strong></li>
+            <li>✅ Tidak perlu melakukan pembayaran tambahan</li>
+            <li>✅ Lapor SPT sebelum batas waktu (31 Maret)</li>
+            <li>✅ Simpan bukti pelaporan</li>
+        </ul>
+    </div>
+
+    <h3>2. <span class="status-badge status-kurang">⚠️ KURANG BAYAR</span></h3>
+    <div class="box box-danger">
+        <h4>Apa itu Status Kurang Bayar?</h4>
+        <p>Status <strong>Kurang Bayar</strong> berarti pajak yang terutang <strong>lebih besar</strong> dari pajak yang
+            sudah dipotong.</p>
+
+        <h4>Contoh Perhitungan:</h4>
+        <table>
+            <tr>
+                <th>Keterangan</th>
+                <th>Jumlah</th>
+            </tr>
+            <tr>
+                <td>Penghasilan Bruto per Tahun</td>
+                <td>Rp 80.000.000</td>
+            </tr>
+            <tr>
+                <td>Penghasilan Neto</td>
+                <td>Rp 76.000.000</td>
+            </tr>
+            <tr>
+                <td>PTKP (TK/0)</td>
+                <td>Rp 54.000.000</td>
+            </tr>
+            <tr>
+                <td>Penghasilan Kena Pajak (PKP)</td>
+                <td>Rp 22.000.000</td>
+            </tr>
+            <tr>
+                <td><strong>PPh 21 Terutang</strong></td>
+                <td><strong>Rp 1.700.000</strong></td>
+            </tr>
+            <tr>
+                <td>PPh 21 Sudah Dipotong</td>
+                <td>Rp 1.200.000</td>
+            </tr>
+            <tr style="background: #f8d7da;">
+                <td><strong>KURANG BAYAR</strong></td>
+                <td><strong>Rp 500.000</strong></td>
+            </tr>
+        </table>
+
+        <h4>Yang Harus Dilakukan:</h4>
+        <ul>
+            <li>⚠️ <strong>WAJIB membayar</strong> kekurangan pajak</li>
+            <li>⚠️ Buat kode billing melalui website DJP</li>
+            <li>⚠️ Bayar sebelum batas waktu pelaporan</li>
+            <li>⚠️ Lapor SPT dengan melampirkan NTPN</li>
+            <li>⚠️ Jika terlambat, akan dikenakan <strong>sanksi denda 2% per bulan</strong></li>
+        </ul>
+
+        <h4>Cara Pembayaran:</h4>
+        <ol>
+            <li>Akses aplikasi TaxEase</li>
+            <li>Klik tombol <strong>"Panduan e-Billing"</strong></li>
+            <li>Ikuti langkah-langkah pembuatan kode billing</li>
+            <li>Bayar melalui bank/ATM/internet banking</li>
+            <li>Simpan bukti pembayaran (NTPN)</li>
+        </ol>
+    </div>
+
+    <h3>3. <span class="status-badge status-lebih">💰 LEBIH BAYAR</span></h3>
+    <div class="box box-warning">
+        <h4>Apa itu Status Lebih Bayar?</h4>
+        <p>Status <strong>Lebih Bayar</strong> berarti pajak yang terutang <strong>lebih kecil</strong> dari pajak yang
+            sudah dipotong.</p>
+
+        <h4>Contoh Perhitungan:</h4>
+        <table>
+            <tr>
+                <th>Keterangan</th>
+                <th>Jumlah</th>
+            </tr>
+            <tr>
+                <td>Penghasilan Bruto per Tahun</td>
+                <td>Rp 72.000.000</td>
+            </tr>
+            <tr>
+                <td>Penghasilan Neto</td>
+                <td>Rp 68.400.000</td>
+            </tr>
+            <tr>
+                <td>PTKP (K/2)</td>
+                <td>Rp 67.500.000</td>
+            </tr>
+            <tr>
+                <td>Penghasilan Kena Pajak (PKP)</td>
+                <td>Rp 900.000</td>
+            </tr>
+            <tr>
+                <td><strong>PPh 21 Terutang (5%)</strong></td>
+                <td><strong>Rp 45.000</strong></td>
+            </tr>
+            <tr>
+                <td>PPh 21 Sudah Dipotong</td>
+                <td>Rp 200.000</td>
+            </tr>
+            <tr style="background: #fff3cd;">
+                <td><strong>LEBIH BAYAR</strong></td>
+                <td><strong>Rp 155.000</strong></td>
+            </tr>
+        </table>
+
+        <h4>Yang Harus Dilakukan:</h4>
+        <ul>
+            <li>✅ Lapor SPT Tahunan</li>
+            <li>✅ Ajukan <strong>restitusi (pengembalian)</strong> atau <strong>kompensasi</strong></li>
+            <li>💡 <strong>Restitusi:</strong> Uang dikembalikan ke rekening Anda</li>
+            <li>💡 <strong>Kompensasi:</strong> Diperhitungkan untuk tahun pajak berikutnya</li>
+            <li>✅ Tunggu verifikasi dari DJP (biasanya 3-12 bulan)</li>
+        </ul>
+
+        <h4>Cara Mengajukan Restitusi:</h4>
+        <ol>
+            <li>Isi SPT Tahunan secara lengkap</li>
+            <li>Pilih opsi "Restitusi" atau "Kompensasi"</li>
+            <li>Lampirkan dokumen pendukung</li>
+            <li>Submit SPT</li>
+            <li>Tunggu proses verifikasi DJP</li>
+        </ol>
+    </div>
+
+    <h2 id="kepatuhan">✅ Kepatuhan Pajak</h2>
+
+    <div class="box box-info">
+        <h3>Mengapa Kepatuhan Pajak Penting?</h3>
+        <ul>
+            <li>🏛️ <strong>Kewajiban Hukum:</strong> Diatur dalam UU No. 36 Tahun 2008</li>
+            <li>🇮🇩 <strong>Kontribusi untuk Negara:</strong> Pajak membangun infrastruktur & layanan publik</li>
+            <li>⚖️ <strong>Hindari Sanksi:</strong> Terlambat atau tidak lapor = denda & sanksi</li>
+            <li>💼 <strong>Akses Perbankan:</strong> SPT diperlukan untuk kredit, visa, dll</li>
+        </ul>
+    </div>
+
+    <h3>Kewajiban Wajib Pajak:</h3>
+    <table>
+        <tr>
+            <th>Kewajiban</th>
+            <th>Batas Waktu</th>
+            <th>Sanksi Jika Terlambat</th>
+        </tr>
+        <tr>
+            <td><strong>Lapor SPT Tahunan OP</strong></td>
+            <td>31 Maret</td>
+            <td>Denda Rp 100.000</td>
+        </tr>
+        <tr>
+            <td><strong>Bayar Kurang Bayar</strong></td>
+            <td>Sebelum lapor SPT</td>
+            <td>Bunga 2% per bulan</td>
+        </tr>
+        <tr>
+            <td><strong>Mendaftar NPWP</strong></td>
+            <td>Saat punya penghasilan</td>
+            <td>Potongan pajak lebih tinggi (20%)</td>
+        </tr>
+    </table>
+
+    <h3>Tips Kepatuhan Pajak:</h3>
+    <div class="step">
+        <ol>
+            <li>📅 <strong>Catat tanggal penting:</strong> 31 Maret untuk OP, 30 April untuk Badan</li>
+            <li>📁 <strong>Simpan dokumen:</strong> Slip gaji, bukti potong, NTPN</li>
+            <li>💻 <strong>Gunakan aplikasi:</strong> TaxEase membantu hitung otomatis</li>
+            <li>📞 <strong>Jika ragu:</strong> Hubungi Kring Pajak 1500200</li>
+            <li>✅ <strong>Rajin cek status:</strong> Login ke DJP Online secara berkala</li>
+        </ol>
+    </div>
+
+    <h2 id="cara-pakai">🖥️ Cara Menggunakan Aplikasi TaxEase</h2>
+
+    <h3>Langkah 1: Registrasi & Login</h3>
+    <div class="step">
+        <h4>Registrasi (Pengguna Baru):</h4>
+        <ol>
+            <li>Buka aplikasi TaxEase</li>
+            <li>Klik <strong>"Register"</strong></li>
+            <li>Isi data:
+                <ul>
+                    <li>NPWP (16 digit)</li>
+                    <li>Nama lengkap</li>
+                    <li>Email</li>
+                    <li>Password</li>
+                </ul>
+            </li>
+            <li>Klik <strong>"Daftar"</strong></li>
+        </ol>
+
+        <h4>Login:</h4>
+        <ol>
+            <li>Masukkan NPWP</li>
+            <li>Masukkan Password</li>
+            <li>Klik <strong>"Login"</strong></li>
+        </ol>
+    </div>
+
+    <h3>Langkah 2: Lengkapi Profil</h3>
+    <div class="step">
+        <ol>
+            <li>Klik menu <strong>"Profil"</strong></li>
+            <li>Lengkapi informasi:
+                <ul>
+                    <li>Status PTKP (TK/K/0/1/2/3)</li>
+                    <li>Penghasilan per bulan</li>
+                    <li>Tanggungan (jika ada)</li>
+                </ul>
+            </li>
+            <li>Klik <strong>"Simpan"</strong></li>
+        </ol>
+    </div>
+
+    <h3>Langkah 3: Simulasi Pajak</h3>
+    <div class="step">
+        <ol>
+            <li>Klik menu <strong>"Simulasi"</strong></li>
+            <li>Sistem akan menghitung otomatis berdasarkan profil</li>
+            <li>Lihat hasil:
+                <ul>
+                    <li>PPh 21 per bulan</li>
+                    <li>PPh 21 per tahun</li>
+                    <li>Status pajak (Nihil/Kurang/Lebih)</li>
+                </ul>
+            </li>
+            <li>Klik <strong>"Lihat Detail"</strong> untuk rincian</li>
+        </ol>
+    </div>
+
+    <h3>Langkah 4: Pengisian SPT</h3>
+    <div class="step">
+        <ol>
+            <li>Klik menu <strong>"Pengisian SPT"</strong></li>
+            <li>Pilih tahun pajak</li>
+            <li>Data otomatis terisi dari profil</li>
+            <li>Verifikasi data</li>
+            <li>Jika ada tambahan penghasilan, input manual</li>
+            <li>Klik <strong>"Hitung"</strong></li>
+        </ol>
+    </div>
+
+    <h3>Langkah 5: Pembayaran (Jika Kurang Bayar)</h3>
+    <div class="step">
+        <ol>
+            <li>Jika status <strong>"Kurang Bayar"</strong>:</li>
+            <li>Klik tombol <strong>"Panduan e-Billing"</strong></li>
+            <li>Ikuti panduan untuk membuat kode billing</li>
+            <li>Bayar melalui bank</li>
+            <li>Simpan NTPN</li>
+        </ol>
+    </div>
+
+    <h3>Langkah 6: Pelaporan SPT</h3>
+    <div class="step">
+        <ol>
+            <li>Buka website DJP Online: <a href="https://djponline.pajak.go.id"
+                    target="_blank">https://djponline.pajak.go.id</a></li>
+            <li>Login dengan NPWP & password</li>
+            <li>Pilih <strong>"e-Filing"</strong></li>
+            <li>Pilih <strong>"Buat SPT"</strong></li>
+            <li>Isi formulir SPT 1770 S</li>
+            <li>Jika kurang bayar, input NTPN</li>
+            <li>Submit SPT</li>
+            <li>Simpan Bukti Penerimaan Elektronik (BPE)</li>
+        </ol>
+    </div>
+
+    <h2 id="tips">💡 Tips & Best Practices</h2>
+
+    <div class="box box-success">
+        <h3>✅ DO (Yang Sebaiknya Dilakukan):</h3>
+        <ul>
+            <li>✅ Simpan semua bukti potong PPh 21 dari pemberi kerja</li>
+            <li>✅ Catat semua penghasilan, termasuk bonus dan THR</li>
+            <li>✅ Update profil jika ada perubahan status (menikah, anak lahir)</li>
+            <li>✅ Lapor SPT sebelum deadline (jangan last minute)</li>
+            <li>✅ Gunakan aplikasi untuk simulasi rutin</li>
+            <li>✅ Simpan semua bukti pelaporan dan pembayaran</li>
+            <li>✅ Check email dari DJP secara berkala</li>
+        </ul>
+    </div>
+
+    <div class="box box-danger">
+        <h3>❌ DON'T (Yang Sebaiknya Dihindari):</h3>
+        <ul>
+            <li>❌ Jangan melewatkan deadline pelaporan</li>
+            <li>❌ Jangan mengisi data asal-asalan</li>
+            <li>❌ Jangan mengabaikan surat dari DJP</li>
+            <li>❌ Jangan lupa update status PTKP</li>
+            <li>❌ Jangan buang bukti potong pajak</li>
+            <li>❌ Jangan lapor SPT tanpa verifikasi data</li>
+        </ul>
+    </div>
+
+    <h2>📞 Bantuan & Kontak</h2>
+
+    <div class="box box-info">
+        <h3>Jika Anda Membutuhkan Bantuan:</h3>
+        <table>
+            <tr>
+                <th>Layanan</th>
+                <th>Kontak</th>
+            </tr>
+            <tr>
+                <td><strong>Kring Pajak</strong></td>
+                <td>📱 1500200 (24/7)</td>
+            </tr>
+            <tr>
+                <td><strong>Email Pengaduan</strong></td>
+                <td>📧 pengaduan@pajak.go.id</td>
+            </tr>
+            <tr>
+                <td><strong>Live Chat DJP</strong></td>
+                <td>🌐 www.pajak.go.id (jam kerja)</td>
+            </tr>
+            <tr>
+                <td><strong>Twitter DJP</strong></td>
+                <td>🐦 @DitjenPajakRI</td>
+            </tr>
+            <tr>
+                <td><strong>Kantor Pajak Terdekat</strong></td>
+                <td>🏢 Cek di website DJP</td>
+            </tr>
+        </table>
+    </div>
+
+    <h2>📚 Referensi Hukum</h2>
+
+    <div class="step">
+        <ul>
+            <li>📖 <strong>UU No. 36 Tahun 2008</strong> tentang Pajak Penghasilan</li>
+            <li>📖 <strong>PMK No. 101/2016</strong> tentang Penyesuaian PTKP</li>
+            <li>📖 <strong>PER-14/PJ/2013</strong> tentang Bentuk dan Tata Cara Pembuatan Bukti Potong PPh Pasal 21</li>
+            <li>📖 <strong>SE-04/PJ/2020</strong> tentang Tata Cara Pelayanan Perpajakan</li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        <p><strong>TaxEase © 2024</strong></p>
+        <p>Aplikasi Perhitungan Pajak Penghasilan</p>
+        <p style="font-size: 12px; color: #999;">
+            Dokumen ini dibuat sebagai panduan edukasi perpajakan.<br>
+            Untuk informasi terbaru, selalu rujuk ke website resmi DJP: www.pajak.go.id
+        </p>
+    </div>
+
+</body>
+
+</html>
